@@ -1,5 +1,8 @@
 import 'package:donut_app_2c_gaxiola/tabs/burger_tab.dart';
 import 'package:donut_app_2c_gaxiola/tabs/donut_tab.dart';
+import 'package:donut_app_2c_gaxiola/tabs/pancakes_tab.dart';
+import 'package:donut_app_2c_gaxiola/tabs/pizza_tab.dart';
+import 'package:donut_app_2c_gaxiola/tabs/smoothie_tab.dart';
 import 'package:donut_app_2c_gaxiola/utils/my_tab.dart';
 import 'package:flutter/material.dart';
 
@@ -44,7 +47,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "I want to ",
+                    "I want to",
                     style: TextStyle(fontSize: 32),
                   ),
                   Text(
@@ -74,7 +77,7 @@ class _HomePageState extends State<HomePage> {
               BurgerTab(),
               SmoothieTab(),
               PancakesTab(),
-              PizzaTab()
+              PizzaTab(),
             ]))
             // Carrito (car)
           ],
