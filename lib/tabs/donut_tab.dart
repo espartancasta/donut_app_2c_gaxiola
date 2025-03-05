@@ -1,3 +1,4 @@
+import 'package:donut_app_2c_gaxiola/utils/donut_tile.dart';
 import 'package:flutter/material.dart';
 
 class DonutTab extends StatelessWidget {
@@ -20,9 +21,10 @@ class DonutTab extends StatelessWidget {
         padding: EdgeInsets.all(12),
         //cómo se distrubuirán los elementos
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          //Cuántas columnas
-          crossAxisCount: 2,
-        ),
+            //Cuántas columnas
+            crossAxisCount: 2,
+//RELACION DE ASPECTO ES UNA PROPORICION
+            childAspectRatio: 1 / 1.5),
         itemBuilder: (context, index) {
           return DonutTile(
             donutFlavor: donutsOnSale[index][0],
